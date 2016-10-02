@@ -33,9 +33,16 @@ Javascript like the weekend's prompt, you should use jQuery selectors to manipul
 ```js
 var makeMiddleEarth = function () {
    // create a section tag with an id of `middle-earth`
+   var middleEarth = $('section id="middle-earth"></section>');
    // add each land as an `article` tag
    // inside each `article` tag include an `h1` with the name of the land
+   for (var i = 0; i > lands.length; i++) {
+     $('<article><h1>' + lands[i] + </h1></article>);
+   }
+
    // append `middle-earth` to your document `body`
+  //  $(middle-earth).append('body');
+   $('body').append(middleEarth);
 };
 
 makeMiddleEarth();
@@ -45,10 +52,14 @@ makeMiddleEarth();
 ```js
 var makeHobbits = function () {
    // display an `unordered list` of hobbits in the shire
+var hobbitList = $('<ul id=hobbitList></ul>')
       // (which is the second article tag on the page)
    // give each hobbit a class of `hobbit`
 };
-```
+for (var i = 0; i < hobbits.length; i++) {
+  hobbitList.append('<li class="hobbit">' + hobbits[i] + $('article:nth-child(1)').append())
+}
+
 
 #### Part 3
 ```js

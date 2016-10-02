@@ -1,5 +1,20 @@
 console.log("Linked.");
 
+var makeMiddleEarth = function () {
+  // create a section tag with an id of `middle-earth`
+var middleEarth = $('<section id="middle-earth"></section>');
+// $('body').append(middleEarth);
+  // add each land as an `article` tag
+  for (var i = 0; i < lands.length; i++) {
+  // }
+    // inside each `article` tag include an `h1` with the name of the land
+// $(middleEarth).append('<article><h1>' + lands[i]) + '</h1></article>');
+  }
+   // inside each `article` tag include an `h1` with the name of the land
+   // append `middle-earth` to your document `body`
+};
+
+
 // Dramatis Personae
 var hobbits = [
   'Frodo Baggins',
